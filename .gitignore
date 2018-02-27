@@ -1,0 +1,36 @@
+# IDE related config files
+.idea/
+.vscode/
+
+
+# Class-specific section #
+
+
+# Java section #
+*.class
+
+# Django section #
+*.log
+*.pot
+*.pyc
+local_settings.py
+*.py[cod]
+
+# C extensions
+*.so
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
