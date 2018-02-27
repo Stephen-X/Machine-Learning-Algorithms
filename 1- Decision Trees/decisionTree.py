@@ -74,6 +74,10 @@ class DecisionTree:
         return str(self.root)
 
     def count_unique(self, data):
+        """
+        A helper function for counting unique elements in data, as numpy 1.7.1
+        doesn't support np.unique(data, return_counts=True).
+        """
         counter_obj = Counter(data)
         return np.asarray(list(counter_obj.keys())), np.asarray(list(counter_obj.values()))
 
@@ -96,6 +100,7 @@ class DecisionTree:
         # # in numpy, arrays slices are just views on the original array
         # labels = raw_data[0]
         # data = raw_data[1:]
+
         raw_data = []
         with open(input_file, 'r') as f:
             reader = csv.reader(f)
