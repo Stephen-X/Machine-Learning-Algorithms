@@ -17,4 +17,5 @@ A repository for hosting some of the popular machine learning algorithm implemen
 
 1. Decision Tree Learner with ID3 Algorithm
 2. Text Analyzer with Multinomial Logistic Regression
-3. TODO
+3. Handwritten Letters Recognition with Neural Network
+4. TODO
