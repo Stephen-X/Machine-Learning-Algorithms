@@ -1,7 +1,7 @@
 # Handwritten Letters Recognition with Neural Network
 **Author:** Stephen Tse \<***@cmu.edu\>
 
-This project trains a a single-hidden-layer neural network for handwritten letter recognition from Optical Character Recognition (OCR) scans. It has a sigmoid activation function for the hidden layer, and a softmax on the output layer.
+This project trains a a single-hidden-layer neural network for handwritten letter recognition from Optical Character Recognition (OCR) scans. It has a sigmoid activation function for the hidden layer, and a softmax on the output layer, and is implemented following the Module-based Automatic Differentiation (AD) technique.
 
 <img src="img/ocr_letters.png" width="400" alt="OCR_Subset">
 
