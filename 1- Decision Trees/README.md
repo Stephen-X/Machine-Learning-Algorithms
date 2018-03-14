@@ -61,4 +61,4 @@ The sample dataset included are the 1984 United Stated Congressional Voting Reco
 
 **Language:** Python 2.7 / 3.6
 
-**Dependency Restriction:** only `numpy` (version 1.7.1), `scipy` and Python's built-in libraries (unfortunately `pandas` is not supported in grading VMs)
+**Dependency Requirements:** `numpy` (version 1.7.1)
