@@ -10,7 +10,7 @@ A repository for hosting some of the popular machine learning algorithm implemen
 
 **Language:** Python 2.7 / 3.6
 
-**Dependency Restriction:** only `numpy` and Python's built-in libraries (unfortunately `pandas` is not supported in grading VMs)
+**Dependency Restriction:** only `numpy`, `scipy` and Python's built-in libraries (unfortunately `pandas` is not supported in grading VMs)
 
 
 ## Algorithm List (Ongoing)
@@ -18,4 +18,5 @@ A repository for hosting some of the popular machine learning algorithm implemen
 1. Decision Tree Learner with ID3 Algorithm
 2. Text Analyzer with Multinomial Logistic Regression
 3. Handwritten Letters Recognition with Neural Network
-4. TODO
+4. Part-Of-Speech Tagging with Hidden Markov Models
+5. Maze Solver with Reinforcement Learning
