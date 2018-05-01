@@ -15,13 +15,11 @@ This project implements a [part-of-speech tagging](https://en.wikipedia.org/wiki
 
 ## Implementation Notes
 
-1. This implementation does not have any forms of regularization (l1 / l2).
+1. In `learnhmm.py`, I padded word and tag samples with filler values at the end to create big matrices for coding convenience (matrix operation is usually more concise and closer to mathematical expressions!). In hindsight, this is probably not a good idea, as I checked that the number of filler values is over 4 times the number of total words in the training data (in other words, the max. sentence length difference is quite large in the dataset), and it did cause the program to run a bit slower than the reference solution developed by teaching assistants that didn't use much vectorization.
 
-2. In `learnhmm.py`, I padded word and tag samples with filler values at the end to create big matrices for coding convenience (matrix operation is usually more concise and closer to mathematical expressions!). In hindsight, this is probably not a good idea, as I checked that the number of filler values is over 4 times the number of total words in the training data (in other words, the max. sentence length difference is quite large in the dataset), and it did cause the program to run a bit slower than the reference solution developed by teaching assistants that didn't use much vectorization.
+2. Although the provided dataset is carefully sanitized, in practice one should address the common issue of floating point number underflow when implementing HMM. I changed the likelihood multiplication in the `predict` method of `forwardbackward.py` to log likelihood computation, as this is the most obvious place that could cause underflow. Nonetheless, I might still miss something as the overall algorithm implementation is not tested against real life scenarios.
 
-3. Although the provided dataset is carefully sanitized, in practice one should address the common issue of floating point number underflow when implementing HMM. I changed the likelihood multiplication in the `predict` method of `forwardbackward.py` to log likelihood computation, as this is the most obvious place that could cause underflow. Nonetheless, I might still miss something as the overall algorithm implementation is not tested against real life scenarios.
-
-4. A [pseudocount](https://en.wikipedia.org/wiki/Additive_smoothing) +1 is added to each count during MLE calculation of the parameters in `learnhmm.py`.
+3. A [pseudocount](https://en.wikipedia.org/wiki/Additive_smoothing) +1 is added to each count during MLE calculation of the parameters in `learnhmm.py`.
 
 ## Usage
 
