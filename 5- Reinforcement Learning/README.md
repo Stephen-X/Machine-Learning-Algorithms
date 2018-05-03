@@ -35,9 +35,9 @@ python value_iteration.py <maze input> <value file> <q value file> <policy file>
 1. `<maze input>`: path to the environment input .txt
 2. `<value file>`: path to output the values V(s)
 3. `<q value file>`: path to output the q-values Q(s; a)
-4. `<policy file>`: path to output the optimal actions \pi(s)
+4. `<policy file>`: path to output the optimal actions \\pi(s)
 5. `<num epoch>`: the number of epochs your program should train the agent for. Setting it to numbers <= 0 will allow the program to keep looping until convergence.
-6. `<discount factor>`: the discount factor \lambda
+6. `<discount factor>`: the discount factor \\lambda
 
 ```bash
 python q_learning.py <maze input> <value file> <q value file> <policy file> <num episodes> <max episode length> <learning rate> <discount factor> <epsilon>
@@ -45,14 +45,14 @@ python q_learning.py <maze input> <value file> <q value file> <policy file> <num
 1. `<maze input>`: path to the environment input .txt
 2. `<value file>`: path to output the values V(s)
 3. `<q value file>`: path to output the q-values Q(s; a)
-4. `<policy file>`: path to output the optimal actions \pi(s)
+4. `<policy file>`: path to output the optimal actions \\pi(s)
 5. `<num episodes>`: the number of episodes your program should train the agent for.
 6. `<max episode length>`: the maximum of the length of an episode. Setting it to numbers <= 0 will allow the agent to keep exploring until it reaches the goal state for the current episode.
-7. `<learning rate>`: the learning rate \alpha of the q-learning algorithm
-8. `<discount factor>`: the discount factor \lambda
-9. `<epsilon>`: the value \epsilon for the epsilon-greedy strategy
+7. `<learning rate>`: the learning rate \\alpha of the q-learning algorithm
+8. `<discount factor>`: the discount factor \\lambda
+9. `<epsilon>`: the value \\epsilon for the epsilon-greedy strategy
 
-Find the optimal policy for each state in `<policy file>` output. It's formatted as “x y optimal action” for each state s = (x, y) and the corresponding optimal policy \pi(s). The 4 possible actions: west, north, east and south is denoted by integer 0, 1, 2, 3 respectively.
+Find the optimal policy for each state in `<policy file>` output. It's formatted as “x y optimal action” for each state s = (x, y) and the corresponding optimal policy \\pi(s). The 4 possible actions: west, north, east and south is denoted by integer 0, 1, 2, 3 respectively.
 
 
 ### Example
