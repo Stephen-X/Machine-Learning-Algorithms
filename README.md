@@ -13,7 +13,7 @@ A repository for hosting some of the popular machine learning algorithm implemen
 **Dependency Restriction:** only `numpy`, `scipy` and Python's built-in libraries (unfortunately `pandas` is not supported in grading VMs)
 
 
-## Algorithm List (Ongoing)
+## Algorithm List
 
 1. Decision Tree Learner with ID3 Algorithm
 2. Text Analyzer with Multinomial Logistic Regression
