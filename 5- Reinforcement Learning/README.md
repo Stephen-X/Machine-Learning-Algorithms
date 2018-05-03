@@ -48,11 +48,11 @@ python q_learning.py <maze input> <value file> <q value file> <policy file> <num
 4. `<policy file>`: path to output the optimal actions \\pi(s)
 5. `<num episodes>`: the number of episodes your program should train the agent for.
 6. `<max episode length>`: the maximum of the length of an episode. Setting it to numbers <= 0 will allow the agent to keep exploring until it reaches the goal state for the current episode.
-7. `<learning rate>`: the learning rate \\alpha of the q-learning algorithm
+7. `<learning rate>`: the learning rate \\alpha of the q-learning algorithm
 8. `<discount factor>`: the discount factor \\lambda
 9. `<epsilon>`: the value \\epsilon for the epsilon-greedy strategy
 
-Find the optimal policy for each state in `<policy file>` output. It's formatted as “x y optimal action” for each state s = (x, y) and the corresponding optimal policy \\pi(s). The 4 possible actions: west, north, east and south is denoted by integer 0, 1, 2, 3 respectively.
+Find the optimal policy for each state in `<policy file>` output. It's formatted as “x y optimal action” for each state s = (x, y) and the corresponding optimal policy \\pi(s). The 4 possible actions: west, north, east and south is denoted by integer 0, 1, 2, 3 respectively.
 
 
 ### Example
